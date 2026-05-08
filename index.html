@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stanford Muslim Student Union</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="assets/msu_logo_without_background.png" alt="Stanford MSU" />
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#leadership" class="nav-link">Leadership</a></li>
+        <li><a href="#events"     class="nav-link">Events</a></li>
+        <li><a href="#gallery"    class="nav-link">Gallery</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="assets/msu_logo_without_background.png" alt="Stanford MSU Logo" class="hero-logo" />
+      <h1 class="hero-title">Stanford Muslim<br />Student Union</h1>
+      <p class="hero-subtitle">Faith &nbsp;·&nbsp; Community &nbsp;·&nbsp; Service</p>
+      <a href="#about" class="btn-primary">Explore</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────────── -->
+  <section id="about" class="section about">
+    <div class="container">
+      <span class="tag">Who We Are</span>
+      <h2 class="section-title">About MSU</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>The Stanford Muslim Student Union is a vibrant, welcoming community of Muslim students at Stanford University. We are dedicated to nurturing faith, fostering genuine connection, and serving those around us.</p>
+          <p>From weekly Jumu'ah prayers and Quran study circles to interfaith dialogues and community iftars, our programming spans the full breadth of Muslim campus life.</p>
+          <p>Whether you are a practicing Muslim, a student exploring Islam, or simply looking for community — you belong here.</p>
+          <a href="#contact" class="btn-outline" style="margin-top:12px;">Get Involved</a>
+        </div>
+        <div class="about-cards">
+          <div class="about-card reveal">
+            <div class="card-icon">🕌</div>
+            <h3>Faith</h3>
+            <p>Weekly Jumu'ah prayers, Quran circles, and spiritual programming rooted in Islamic tradition.</p>
+          </div>
+          <div class="about-card reveal">
+            <div class="card-icon">🤝</div>
+            <h3>Community</h3>
+            <p>A warm, inclusive space for Muslims and allies to connect, grow, and build lasting friendships.</p>
+          </div>
+          <div class="about-card reveal">
+            <div class="card-icon">🌍</div>
+            <h3>Service</h3>
+            <p>Volunteering, advocacy, and outreach programs grounded in the Islamic ethic of giving back.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LEADERSHIP ────────────────────────────────────────── -->
+  <section id="leadership" class="section leadership">
+    <div class="container">
+      <span class="tag tag-gold">Our Team</span>
+      <h2 class="section-title light">Leadership</h2>
+      <p class="section-sub light">Meet the dedicated students steering our community this year.</p>
+      <div class="leadership-grid">
+
+        <div class="leader-card reveal">
+          <div class="avatar">
+            <!--
+              To add a real photo: replace the .avatar-placeholder div below with
+              <img src="photos/name.jpg" alt="Name" />
+              Make sure the image is square (or it will be cropped to a circle).
+            -->
+            <div class="avatar-placeholder">A</div>
+          </div>
+          <h3 class="leader-name">Name Here</h3>
+          <p class="leader-role">President</p>
+          <p class="leader-bio">A brief quote or bio about this leader's vision for the MSU community.</p>
+        </div>
+
+        <div class="leader-card reveal">
+          <div class="avatar">
+            <div class="avatar-placeholder">B</div>
+          </div>
+          <h3 class="leader-name">Name Here</h3>
+          <p class="leader-role">Vice President</p>
+          <p class="leader-bio">A brief quote or bio about this leader's vision for the MSU community.</p>
+        </div>
+
+        <div class="leader-card reveal">
+          <div class="avatar">
+            <div class="avatar-placeholder">C</div>
+          </div>
+          <h3 class="leader-name">Name Here</h3>
+          <p class="leader-role">Secretary</p>
+          <p class="leader-bio">A brief quote or bio about this leader's vision for the MSU community.</p>
+        </div>
+
+        <div class="leader-card reveal">
+          <div class="avatar">
+            <div class="avatar-placeholder">D</div>
+          </div>
+          <h3 class="leader-name">Name Here</h3>
+          <p class="leader-role">Treasurer</p>
+          <p class="leader-bio">A brief quote or bio about this leader's vision for the MSU community.</p>
+        </div>
+
+        <div class="leader-card reveal">
+          <div class="avatar">
+            <div class="avatar-placeholder">E</div>
+          </div>
+          <h3 class="leader-name">Name Here</h3>
+          <p class="leader-role">Events Chair</p>
+          <p class="leader-bio">A brief quote or bio about this leader's vision for the MSU community.</p>
+        </div>
+
+        <div class="leader-card reveal">
+          <div class="avatar">
+            <div class="avatar-placeholder">F</div>
+          </div>
+          <h3 class="leader-name">Name Here</h3>
+          <p class="leader-role">Outreach Chair</p>
+          <p class="leader-bio">A brief quote or bio about this leader's vision for the MSU community.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EVENTS ─────────────────────────────────────────────── -->
+  <section id="events" class="section events">
+    <div class="container">
+      <span class="tag">Stay Updated</span>
+      <h2 class="section-title">Upcoming Events</h2>
+      <p class="section-sub">From weekly prayers to community dinners — see what's coming up.</p>
+
+      <div class="calendar-card reveal">
+        <!--
+          HOW TO CONNECT YOUR GOOGLE CALENDAR:
+          1. Open Google Calendar (calendar.google.com)
+          2. In the left sidebar, click the three-dot menu next to your calendar name
+          3. Choose "Settings and sharing"
+          4. Scroll down to "Integrate calendar"
+          5. Copy the "Embed code" — it looks like an <iframe> tag
+          6. Replace the entire <iframe> block below with that code
+             (you can keep the surrounding .calendar-card div)
+
+          TIP: In the embed URL, you can append these parameters to style it:
+            &showTitle=0   — hides the calendar title
+            &showNav=1     — shows prev/next month buttons
+            &showPrint=0   — hides the print button
+            &showTabs=0    — hides the view tabs
+            &showCalendars=0 — hides the calendar selector
+            &mode=MONTH    — defaults to month view
+        -->
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID%40group.calendar.google.com&ctz=America%2FLos_Angeles&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&mode=MONTH"
+          frameborder="0"
+          scrolling="no"
+          title="MSU Events Calendar"
+        ></iframe>
+      </div>
+
+      <p class="calendar-note">
+        View or subscribe in Google Calendar:
+        <a href="https://calendar.google.com" target="_blank" rel="noopener">Open Calendar</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ────────────────────────────────────────────── -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <span class="tag tag-gold">Memories</span>
+      <h2 class="section-title light">Gallery</h2>
+      <p class="section-sub light">Moments from our community — prayers, gatherings, and celebrations.</p>
+
+      <!-- Nasheed Player -->
+      <div class="nasheed-player">
+        <button class="nasheed-btn" id="nasheed-btn" onclick="toggleNasheed()">
+          <span class="play-icon" id="play-icon">▶</span>
+          <span>Play Nasheed</span>
+        </button>
+        <div class="nasheed-info">
+          <span class="nasheed-name" id="nasheed-name">No track loaded — see instructions below</span>
+          <div class="nasheed-bar-wrap" id="nasheed-bar-wrap">
+            <div class="nasheed-progress" id="nasheed-progress"></div>
+          </div>
+        </div>
+        <!--
+          HOW TO ADD A NASHEED:
+          1. Place your MP3 file in this project folder (e.g., nasheed.mp3)
+          2. Change the <source src=""> below to your filename
+          3. Update the nasheed-name span above with the track name
+          Example: <source src="tala-al-badru.mp3" type="audio/mpeg" />
+        -->
+        <audio id="nasheed-audio" loop>
+          <source src="nasheed.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+
+      <!-- Gallery Grid -->
+      <!--
+        HOW TO ADD YOUR OWN PHOTOS:
+        1. Create a folder called "photos" inside this project folder
+        2. Copy your image files there (JPG, PNG, or WEBP all work)
+        3. For each .gallery-item below, change the <img src="..."> to your file path
+           Example: <img src="photos/eid2025.jpg" alt="Eid 2025" loading="lazy" />
+        4. Update the alt text and the caption inside <span class="caption">
+        5. To add more photos: copy any .gallery-item block and paste it into the grid
+        6. To remove photos: delete the entire .gallery-item block
+        The staggered pop-up animation will reapply automatically to any new items.
+      -->
+      <div class="gallery-grid" id="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/600x450/8C1515/EFE0C0?text=MSU+Event" alt="MSU Event" loading="lazy" />
+          <div class="gallery-caption"><span class="caption">MSU Event</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/600x400/6B0F0F/EFE0C0?text=Jumu%27ah+Prayer" alt="Jumu'ah Prayer" loading="lazy" />
+          <div class="gallery-caption"><span class="caption">Jumu'ah Prayer</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/600x500/C4860A/4A0A0A?text=Iftar+Dinner" alt="Iftar Dinner" loading="lazy" />
+          <div class="gallery-caption"><span class="caption">Iftar Dinner</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/600x450/8C1515/EFE0C0?text=Community+Day" alt="Community Day" loading="lazy" />
+          <div class="gallery-caption"><span class="caption">Community Day</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/600x400/4A0A0A/EFE0C0?text=Quran+Circle" alt="Quran Circle" loading="lazy" />
+          <div class="gallery-caption"><span class="caption">Quran Circle</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/600x500/C4860A/4A0A0A?text=Volunteer+Day" alt="Volunteer Day" loading="lazy" />
+          <div class="gallery-caption"><span class="caption">Volunteer Day</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/600x450/8C1515/EFE0C0?text=Eid+Celebration" alt="Eid Celebration" loading="lazy" />
+          <div class="gallery-caption"><span class="caption">Eid Celebration</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/600x400/6B0F0F/EFE0C0?text=Social+Night" alt="Social Night" loading="lazy" />
+          <div class="gallery-caption"><span class="caption">Social Night</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/600x500/C4860A/4A0A0A?text=Campus+Fair" alt="Campus Fair" loading="lazy" />
+          <div class="gallery-caption"><span class="caption">Campus Fair</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────────────── -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <span class="tag">Reach Out</span>
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub">We'd love to hear from you. Reach out or join our mailing list.</p>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Location</strong>
+              <p>Harmony House, 551 Salvatierra Walk<br />Stanford, CA 94305</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:msu@stanford.edu">msu@stanford.edu</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div>
+              <strong>Follow Us</strong>
+              <p>
+                <a href="#" target="_blank" rel="noopener">Instagram</a> &nbsp;·&nbsp;
+                <a href="#" target="_blank" rel="noopener">Facebook</a> &nbsp;·&nbsp;
+                <a href="#" target="_blank" rel="noopener">GroupMe</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-maroon">Send Message</button>
+          <p class="form-feedback" id="form-feedback"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="assets/msu_logo_without_background.png" alt="Stanford MSU" class="footer-logo" />
+      <p>&copy; <span id="year"></span> Stanford Muslim Student Union</p>
+      <p class="footer-sub">Made with faith at Stanford University</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
