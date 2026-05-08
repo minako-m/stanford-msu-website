@@ -231,7 +231,7 @@ ul  { list-style: none; }
   /* Photo behind, maroon gradient on top */
   background:
     linear-gradient(150deg, rgba(74,10,10,.88) 0%, rgba(140,21,21,.78) 50%, rgba(90,12,12,.90) 100%),
-    url('assets/front_page_background.jpg') center / cover no-repeat;
+    url('assets/front_page_background.jpg') 50% 30% / cover no-repeat;
 }
 
 /* Gold glow from below */
