@@ -724,6 +724,12 @@ ul  { list-style: none; }
   .nav-links.open { display: flex; }
   .hamburger      { display: flex; }
 
+  .hero {
+    background:
+      linear-gradient(150deg, rgba(74,10,10,.88) 30%, rgba(140,21,21,.78) 100%, rgba(90,12,12,.90) 100%),
+      url('assets/page_background.png') center center / cover no-repeat;
+  }
+
   .gallery-grid { grid-template-columns: 1fr; }
   .nasheed-player { border-radius: var(--radius); }
   .contact-form { padding: 24px; }
