@@ -230,8 +230,8 @@ ul  { list-style: none; }
   padding-top: var(--nav-h);
   /* Photo behind, maroon gradient on top */
   background:
-    linear-gradient(150deg, rgba(74,10,10,.88) 0%, rgba(140,21,21,.78) 50%, rgba(90,12,12,.90) 100%),
-    url('assets/front_page_background.jpg') 50% 30% / cover no-repeat;
+    linear-gradient(150deg, rgba(74,10,10,.88) 30%, rgba(140,21,21,.78) 100%, rgba(90,12,12,.90) 100%),
+    url('assets/page_background.png') 80% 35% / 105% no-repeat;
 }
 
 /* Gold glow from below */
@@ -250,11 +250,11 @@ ul  { list-style: none; }
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 22px;
+  gap: 14px;
   padding: 40px 24px;
 }
 .hero-logo {
-  width: clamp(110px, 16vw, 190px);
+  width: clamp(130px, 19vw, 220px);
   /* cream glow makes the light logo elements pop against any background */
   filter:
     drop-shadow(0 0 18px rgba(239,224,192,.55))
