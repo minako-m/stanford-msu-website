@@ -124,24 +124,3 @@ audio.addEventListener('ended', () => {
   progress.style.width = '0%';
 });
 
-// ── Contact form ──────────────────────────────────────────────────
-//
-// By default the form does nothing on submit (no backend connected).
-// To connect a backend:
-//   Option A — Formspree (no code needed):
-//     1. Go to formspree.io, create a free account, create a form.
-//     2. Change the <form> action attribute to your Formspree endpoint:
-//        <form action="https://formspree.io/f/YOUR_ID" method="POST">
-//     3. Remove the onsubmit="handleSubmit(event)" attribute.
-//
-//   Option B — Netlify Forms (if hosting on Netlify):
-//     1. Add data-netlify="true" to the <form> tag.
-//     2. Remove the onsubmit handler.
-//
-function handleSubmit(e) {
-  e.preventDefault();
-  const feedback = document.getElementById('form-feedback');
-  feedback.style.color = '#C4860A';
-  feedback.textContent = 'Thank you! Your message has been received. We\'ll be in touch soon, insha\'Allah.';
-  e.target.reset();
-}
