@@ -4,7 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stanford Muslim Student Union</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="The Stanford Muslim Student Union (MSU) is a student-led community for Muslim students at Stanford, hosting Jumu'ah prayers, brothers' and sisters' halaqas, Ramadan programming, and campus events centered on faith, community, and service." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://stanford-msu.netlify.app/" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Stanford Muslim Student Union" />
+  <meta property="og:url" content="https://stanford-msu.netlify.app/" />
+  <meta property="og:title" content="Stanford Muslim Student Union" />
+  <meta property="og:description" content="A student-led community for Muslim students at Stanford — Jumu'ah prayers, halaqas, Ramadan programming, and campus events centered on faith, community, and service." />
+  <meta property="og:image" content="https://stanford-msu.netlify.app/assets/photos/page_background.png" />
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Stanford Muslim Student Union" />
+  <meta name="twitter:description" content="A student-led community for Muslim students at Stanford — Jumu'ah prayers, halaqas, Ramadan programming, and campus events centered on faith, community, and service." />
+  <meta name="twitter:image" content="https://stanford-msu.netlify.app/assets/photos/page_background.png" />
+
+  <link rel="icon" type="image/png" href="assets/logos/msu_logo_without_background.png" />
+  <meta name="theme-color" content="#8C1515" />
+
+  <link rel="stylesheet" href="css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -15,14 +36,15 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#home" class="nav-logo">
-        <img src="assets/msu_logo_without_background.png" alt="Stanford MSU" />
+        <img src="assets/logos/msu_logo_without_background.png" alt="Stanford MSU" />
       </a>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#about"      class="nav-link">About</a></li>
-        <li><a href="#events"     class="nav-link">Events</a></li>
-        <li><a href="#ramadan"    class="nav-link">Ramadan</a></li>
-        <li><a href="#gallery"    class="nav-link">Gallery</a></li>
-        <li><a href="#contact"    class="nav-link">Contact</a></li>
+        <li><a href="#home"       class="nav-link">Home</a></li>
+        <li><a href="about.html"   class="nav-link">About</a></li>
+        <li><a href="ramadan.html" class="nav-link">Ramadan</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="campus-life.html" class="nav-link">Campus Life</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
         <li><a href="https://account.venmo.com/u/MSU-Stanford" target="_blank" rel="noopener" class="btn-donate">Donate</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -34,7 +56,7 @@
   <!-- ── HERO ─────────────────────────────────────────────── -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <img src="assets/msu_logo_without_background.png" alt="Stanford MSU Logo" class="hero-logo" />
+      <img src="assets/logos/msu_logo_without_background.png" alt="Stanford MSU Logo" class="hero-logo" />
       <h1 class="hero-title">Stanford Muslim<br />Student Union</h1>
       <p class="hero-subtitle">Faith &nbsp;·&nbsp; Community &nbsp;·&nbsp; Service</p>
       <a href="#about" class="btn-primary">Explore</a>
@@ -47,8 +69,8 @@
   <!-- ── ABOUT ─────────────────────────────────────────────── -->
   <section id="about" class="section about">
     <div class="container">
-      <span class="tag">Who We Are</span>
-      <h2 class="section-title">About MSU</h2>
+      <span class="tag">About Us</span>
+      <h2 class="section-title">Who we are</h2>
       <div class="about-grid">
         <div class="about-text reveal">
           <p>The Stanford Muslim Student Union is a vibrant, welcoming community of Muslim students at Stanford University. We are dedicated to nurturing faith, fostering genuine connection, and serving those around us.</p>
@@ -123,114 +145,6 @@
     </div>
   </section>
 
-  <!-- ── RAMADAN ON CAMPUS ─────────────────────────────────────── -->
-  <section id="ramadan" class="section ramadan">
-    <div class="container">
-      <span class="tag">Ramadan 2027: TBA</span>
-      <h2 class="section-title">Ramadan on Campus</h2>
-      <div class="ramadan-card reveal">
-        <p>
-          Here you will find information about daily iftars, maghrib, isha, and taraweeh prayers, and other Ramadan 2027 events on campus. For Ramadan 2026 information, visit
-          <a href="https://stanfordramadan.com" target="_blank" rel="noopener">stanfordramadan.com</a>.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── GALLERY ────────────────────────────────────────────── -->
-  <section id="gallery" class="section gallery">
-    <div class="container">
-      <span class="tag tag-gold">Memories</span>
-      <h2 class="section-title light">Gallery</h2>
-      <p class="section-sub light">Moments from our community — prayers, gatherings, and celebrations.</p>
-
-      <!-- Nasheed Player -->
-      <div class="nasheed-player">
-        <button class="nasheed-btn" id="nasheed-btn" onclick="toggleNasheed()">
-          <span class="play-icon" id="play-icon">▶</span>
-          <span>Play Nasheed</span>
-        </button>
-        <div class="nasheed-info">
-          <span class="nasheed-name" id="nasheed-name">No track loaded — see instructions below</span>
-          <div class="nasheed-bar-wrap" id="nasheed-bar-wrap">
-            <div class="nasheed-progress" id="nasheed-progress"></div>
-          </div>
-        </div>
-        <!--
-          HOW TO ADD A NASHEED:
-          1. Place your MP3 file in this project folder (e.g., nasheed.mp3)
-          2. Change the <source src=""> below to your filename
-          3. Update the nasheed-name span above with the track name
-          Example: <source src="tala-al-badru.mp3" type="audio/mpeg" />
-        -->
-        <audio id="nasheed-audio" loop>
-          <source src="nasheed.mp3" type="audio/mpeg" />
-        </audio>
-      </div>
-
-      <!-- Gallery Grid -->
-      <!--
-        HOW TO ADD YOUR OWN PHOTOS:
-        1. Create a folder called "photos" inside this project folder
-        2. Copy your image files there (JPG, PNG, or WEBP all work)
-        3. For each .gallery-item below, change the <img src="..."> to your file path
-           Example: <img src="photos/eid2025.jpg" alt="Eid 2025" loading="lazy" />
-        4. Update the alt text and the caption inside <span class="caption">
-        5. To add more photos: copy any .gallery-item block and paste it into the grid
-        6. To remove photos: delete the entire .gallery-item block
-        The staggered pop-up animation will reapply automatically to any new items.
-      -->
-      <div class="gallery-grid" id="gallery-grid">
-
-        <div class="gallery-item">
-          <img src="https://placehold.co/600x450/8C1515/EFE0C0?text=MSU+Event" alt="MSU Event" loading="lazy" />
-          <div class="gallery-caption"><span class="caption">MSU Event</span></div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://placehold.co/600x400/6B0F0F/EFE0C0?text=Jumu%27ah+Prayer" alt="Jumu'ah Prayer" loading="lazy" />
-          <div class="gallery-caption"><span class="caption">Jumu'ah Prayer</span></div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://placehold.co/600x500/C4860A/4A0A0A?text=Iftar+Dinner" alt="Iftar Dinner" loading="lazy" />
-          <div class="gallery-caption"><span class="caption">Iftar Dinner</span></div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://placehold.co/600x450/8C1515/EFE0C0?text=Community+Day" alt="Community Day" loading="lazy" />
-          <div class="gallery-caption"><span class="caption">Community Day</span></div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://placehold.co/600x400/4A0A0A/EFE0C0?text=Quran+Circle" alt="Quran Circle" loading="lazy" />
-          <div class="gallery-caption"><span class="caption">Quran Circle</span></div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://placehold.co/600x500/C4860A/4A0A0A?text=Volunteer+Day" alt="Volunteer Day" loading="lazy" />
-          <div class="gallery-caption"><span class="caption">Volunteer Day</span></div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://placehold.co/600x450/8C1515/EFE0C0?text=Eid+Celebration" alt="Eid Celebration" loading="lazy" />
-          <div class="gallery-caption"><span class="caption">Eid Celebration</span></div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://placehold.co/600x400/6B0F0F/EFE0C0?text=Social+Night" alt="Social Night" loading="lazy" />
-          <div class="gallery-caption"><span class="caption">Social Night</span></div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://placehold.co/600x500/C4860A/4A0A0A?text=Campus+Fair" alt="Campus Fair" loading="lazy" />
-          <div class="gallery-caption"><span class="caption">Campus Fair</span></div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- ── CONTACT ────────────────────────────────────────────── -->
   <section id="contact" class="section contact">
     <div class="container">
@@ -288,12 +202,24 @@
   <!-- ── FOOTER ─────────────────────────────────────────────── -->
   <footer class="footer">
     <div class="container footer-inner">
-      <img src="assets/msu_logo_without_background.png" alt="Stanford MSU" class="footer-logo" />
+      <div class="footer-top">
+        <a href="index.html#home" class="footer-brand">
+          <img src="assets/logos/msu_logo_without_background.png" alt="Stanford MSU" class="footer-logo" />
+        </a>
+        <nav class="footer-links">
+          <a href="index.html#home">Home</a>
+          <a href="about.html">About</a>
+          <a href="ramadan.html">Ramadan</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="campus-life.html">Campus Life</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
       <p>&copy; <span id="year"></span> Stanford Muslim Student Union</p>
       <p class="footer-sub">Made with faith at Stanford University</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
