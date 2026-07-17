@@ -64,60 +64,46 @@
         <!-- Gallery Grid -->
         <!--
           HOW TO ADD YOUR OWN PHOTOS:
-          1. Create a folder called "photos" inside this project folder
-          2. Copy your image files there (JPG, PNG, or WEBP all work)
-          3. For each .gallery-item below, change the <img src="..."> to your file path
-             Example: <img src="photos/eid2025.jpg" alt="Eid 2025" loading="lazy" />
-          4. Update the alt text and the caption inside <span class="caption">
-          5. To add more photos: copy any .gallery-item block and paste it into the grid
-          6. To remove photos: delete the entire .gallery-item block
+          1. Add your image file to assets/gallery/ (JPG, PNG, or WEBP all work)
+          2. Copy any .gallery-item block below and update the <img src="..."> to your file path
+             Example: <img src="assets/gallery/eid2027.jpg" alt="Eid 2027" loading="lazy" />
+          3. Update the alt text and the caption inside <span class="caption">
+          4. Add class="wide" to a .gallery-item if the photo is a wide landscape shot
+             (spans 2 columns), or class="tall" if it's a portrait shot (taller cell).
+             Leave the class off for a standard landscape photo.
+          5. To remove photos: delete the entire .gallery-item block
           The staggered pop-up animation will reapply automatically to any new items.
         -->
         <div class="gallery-grid" id="gallery-grid">
 
-          <div class="gallery-item">
-            <img src="https://placehold.co/600x450/8C1515/EFE0C0?text=MSU+Event" alt="MSU Event" loading="lazy" />
-            <div class="gallery-caption"><span class="caption">MSU Event</span></div>
+          <div class="gallery-item wide">
+            <img src="assets/gallery/eid-al-fitr.jpg" alt="Eid al-Fitr" loading="lazy" />
+            <div class="gallery-caption"><span class="caption">Eid al-Fitr</span></div>
+          </div>
+
+          <div class="gallery-item wide">
+            <img src="assets/gallery/golden-gate-fajr.jpg" alt="Golden Gate Fajr" loading="lazy" />
+            <div class="gallery-caption"><span class="caption">Golden Gate Fajr</span></div>
           </div>
 
           <div class="gallery-item">
-            <img src="https://placehold.co/600x400/6B0F0F/EFE0C0?text=Jumu%27ah+Prayer" alt="Jumu'ah Prayer" loading="lazy" />
-            <div class="gallery-caption"><span class="caption">Jumu'ah Prayer</span></div>
+            <img src="assets/gallery/grad-archery.jpg" alt="Grad Archery" loading="lazy" />
+            <div class="gallery-caption"><span class="caption">Grad Archery</span></div>
           </div>
 
-          <div class="gallery-item">
-            <img src="https://placehold.co/600x500/C4860A/4A0A0A?text=Iftar+Dinner" alt="Iftar Dinner" loading="lazy" />
-            <div class="gallery-caption"><span class="caption">Iftar Dinner</span></div>
+          <div class="gallery-item tall">
+            <img src="assets/gallery/welcome-banquet.jpg" alt="Welcome Banquet" loading="lazy" />
+            <div class="gallery-caption"><span class="caption">Welcome Banquet</span></div>
           </div>
 
-          <div class="gallery-item">
-            <img src="https://placehold.co/600x450/8C1515/EFE0C0?text=Community+Day" alt="Community Day" loading="lazy" />
-            <div class="gallery-caption"><span class="caption">Community Day</span></div>
+          <div class="gallery-item landscape">
+            <img src="assets/gallery/msu-on-ice.jpg" alt="MSU on Ice" loading="lazy" />
+            <div class="gallery-caption"><span class="caption">MSU on Ice</span></div>
           </div>
 
-          <div class="gallery-item">
-            <img src="https://placehold.co/600x400/4A0A0A/EFE0C0?text=Quran+Circle" alt="Quran Circle" loading="lazy" />
-            <div class="gallery-caption"><span class="caption">Quran Circle</span></div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="https://placehold.co/600x500/C4860A/4A0A0A?text=Volunteer+Day" alt="Volunteer Day" loading="lazy" />
-            <div class="gallery-caption"><span class="caption">Volunteer Day</span></div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="https://placehold.co/600x450/8C1515/EFE0C0?text=Eid+Celebration" alt="Eid Celebration" loading="lazy" />
-            <div class="gallery-caption"><span class="caption">Eid Celebration</span></div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="https://placehold.co/600x400/6B0F0F/EFE0C0?text=Social+Night" alt="Social Night" loading="lazy" />
-            <div class="gallery-caption"><span class="caption">Social Night</span></div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="https://placehold.co/600x500/C4860A/4A0A0A?text=Campus+Fair" alt="Campus Fair" loading="lazy" />
-            <div class="gallery-caption"><span class="caption">Campus Fair</span></div>
+          <div class="gallery-item landscape">
+            <img src="assets/gallery/open-iftar.jpg" alt="Open Iftar" loading="lazy" />
+            <div class="gallery-caption"><span class="caption">Open Iftar</span></div>
           </div>
 
         </div>
