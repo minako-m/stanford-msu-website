@@ -203,6 +203,65 @@ ul  { list-style: none; }
 .nav-links .nav-link:hover       { color: var(--gold-light); }
 .nav-links .nav-link:hover::after{ width: 100%; }
 
+/* ── Resources dropdown ── */
+.nav-dropdown { position: relative; }
+.nav-dropdown-toggle {
+  background: none;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.nav-caret {
+  font-size: .7rem;
+  transition: transform .2s;
+}
+.nav-dropdown:hover .nav-caret,
+.nav-dropdown.open .nav-caret {
+  transform: rotate(180deg);
+}
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 16px;
+  min-width: 220px;
+  background: var(--maroon-deep);
+  border: 1px solid rgba(239,224,192,.14);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0,0,0,.35);
+  padding: 8px;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity .2s ease, transform .2s ease, visibility .2s;
+  z-index: 200;
+}
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown.open .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav-dropdown-menu a {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: var(--cream);
+  font-size: .88rem;
+  font-weight: 500;
+  letter-spacing: .02em;
+  white-space: nowrap;
+  transition: background .18s, color .18s;
+}
+.nav-dropdown-menu a:hover {
+  background: rgba(239,224,192,.1);
+  color: var(--gold-light);
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -795,6 +854,11 @@ ul  { list-style: none; }
 .food { background: linear-gradient(170deg, var(--maroon-deep) 0%, #5C0F0F 100%); }
 .accommodations { background: linear-gradient(170deg, var(--maroon-deep) 0%, #5C0F0F 100%); }
 
+/* ================================================================
+   FOR NEW STUDENTS (resources-new-students.html)
+   ================================================================ */
+.new-students { background: var(--cream-light); }
+
 .info-card {
   background: var(--white);
   border-radius: var(--radius);
@@ -998,6 +1062,19 @@ ul  { list-style: none; }
   }
   .nav-links.open { display: flex; }
   .hamburger      { display: flex; }
+
+  .nav-dropdown-menu {
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    margin-top: 10px;
+    box-shadow: none;
+    border: none;
+    background: rgba(0,0,0,.15);
+  }
+  .nav-dropdown.open .nav-dropdown-menu { display: block; }
 
   .hero {
     background:

@@ -1,58 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Stanford Muslim Student Union</title>
-  <meta name="description" content="Learn about the Stanford Muslim Student Union's board, committees, chaplaincy, and affiliated organizations." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://stanford-msu.netlify.app/about.html" />
-
-  <!-- Open Graph / social preview -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Stanford Muslim Student Union" />
-  <meta property="og:url" content="https://stanford-msu.netlify.app/about.html" />
-  <meta property="og:title" content="About | Stanford Muslim Student Union" />
-  <meta property="og:description" content="Learn about the Stanford Muslim Student Union's board, committees, chaplaincy, and affiliated organizations." />
-  <meta property="og:image" content="https://stanford-msu.netlify.app/assets/photos/page_background.png" />
-
-  <!-- Twitter card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="About | Stanford Muslim Student Union" />
-  <meta name="twitter:description" content="Learn about the Stanford Muslim Student Union's board, committees, chaplaincy, and affiliated organizations." />
-  <meta name="twitter:image" content="https://stanford-msu.netlify.app/assets/photos/page_background.png" />
-
-  <link rel="icon" type="image/png" href="assets/logos/msu_logo_without_background.png" />
-  <meta name="theme-color" content="#8C1515" />
-
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-</head>
-<body>
-
-  <!-- ── NAVIGATION ────────────────────────────────────────── -->
-  <nav id="navbar" class="navbar-solid">
-    <div class="nav-inner">
-      <a href="index.html#home" class="nav-logo">
-        <img src="assets/logos/msu_logo_without_background.png" alt="Stanford MSU" />
-      </a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html#home" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="ramadan.html" class="nav-link">Ramadan</a></li>
-        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-        <li><a href="campus-life.html" class="nav-link">Campus Life</a></li>
-        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-        <li><a href="https://account.venmo.com/u/MSU-Stanford" target="_blank" rel="noopener" class="btn-donate">Donate</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
+---
+layout: base.njk
+permalink: about.html
+title: About | Stanford Muslim Student Union
+description: "Learn about the Stanford Muslim Student Union's board, committees, chaplaincy, and affiliated organizations."
+canonical: https://stanford-msu.netlify.app/about.html
+homeHref: "index.html#home"
+contactHref: "index.html#contact"
+navSolid: true
+---
   <main style="padding-top: var(--nav-h);">
 
     <!-- ── MSU BOARD ──────────────────────────────────────────── -->
@@ -122,13 +77,13 @@
             </div>
             <h3>Dr. Rania Awaad</h3>
             <p class="chaplain-role">Associated Chaplain</p>
-            <p class="chaplain-bio">Rania Awaad, M.D. is a Clinical Professor of Psychiatry at the Stanford 
-              University School of Medicine where she is the Director of the Stanford Muslim Mental Health 
-              & Islamic Psychology Lab as well Stanford University's Affiliate Chaplain. She also serves as 
-              the Associate Division Chief for Public Mental Health and Population Sciences as well as the 
-              Section Co-Chief of Diversity and Cultural Mental Health. In addition, she is a faculty member 
-              of the Abbasi Program in Islamic Studies at Stanford University. She pursued her psychiatric 
-              residency training at Stanford where she also completed a postdoctoral clinical research 
+            <p class="chaplain-bio">Rania Awaad, M.D. is a Clinical Professor of Psychiatry at the Stanford
+              University School of Medicine where she is the Director of the Stanford Muslim Mental Health
+              & Islamic Psychology Lab as well Stanford University's Affiliate Chaplain. She also serves as
+              the Associate Division Chief for Public Mental Health and Population Sciences as well as the
+              Section Co-Chief of Diversity and Cultural Mental Health. In addition, she is a faculty member
+              of the Abbasi Program in Islamic Studies at Stanford University. She pursued her psychiatric
+              residency training at Stanford where she also completed a postdoctoral clinical research
               fellowship with the National Institute of Mental Health (NIMH).</p>
           </div>
         </div>
@@ -165,28 +120,3 @@
     </section>
 
   </main>
-
-  <!-- ── FOOTER ─────────────────────────────────────────────── -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-top">
-        <a href="index.html#home" class="footer-brand">
-          <img src="assets/logos/msu_logo_without_background.png" alt="Stanford MSU" class="footer-logo" />
-        </a>
-        <nav class="footer-links">
-          <a href="index.html#home">Home</a>
-          <a href="about.html">About</a>
-          <a href="ramadan.html">Ramadan</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="campus-life.html">Campus Life</a>
-          <a href="index.html#contact">Contact</a>
-        </nav>
-      </div>
-      <p>&copy; <span id="year"></span> Stanford Muslim Student Union</p>
-      <p class="footer-sub">Made with faith at Stanford University</p>
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
-</body>
-</html>

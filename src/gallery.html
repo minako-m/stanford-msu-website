@@ -1,0 +1,71 @@
+---
+layout: base.njk
+permalink: gallery.html
+title: Gallery | Stanford Muslim Student Union
+description: "Photos from Stanford Muslim Student Union events — prayers, gatherings, iftars, and celebrations."
+ogTitle: Gallery | Stanford Muslim Student Union
+ogDescription: "Moments from our community — prayers, gatherings, and celebrations."
+canonical: https://stanford-msu.netlify.app/gallery.html
+homeHref: "index.html#home"
+contactHref: "index.html#contact"
+navSolid: true
+extraScripts:
+  - js/gallery.js
+---
+  <main style="padding-top: var(--nav-h);">
+    <!-- ── GALLERY ────────────────────────────────────────────── -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <span class="tag tag-gold">Memories</span>
+        <h2 class="section-title light">Gallery</h2>
+        <p class="section-sub light">Moments from our community — prayers, gatherings, and celebrations.</p>
+
+        <!-- Gallery Grid -->
+        <!--
+          HOW TO ADD YOUR OWN PHOTOS:
+          1. Add your image file to assets/gallery/ (JPG, PNG, or WEBP all work)
+          2. Copy any .gallery-item block below and update the <img src="..."> to your file path
+             Example: <img src="assets/gallery/eid2027.jpg" alt="Eid 2027" loading="lazy" />
+          3. Update the alt text and the caption inside <span class="caption">
+          4. Add class="wide" to a .gallery-item if the photo is a wide landscape shot
+             (spans 2 columns), or class="tall" if it's a portrait shot (taller cell).
+             Leave the class off for a standard landscape photo.
+          5. To remove photos: delete the entire .gallery-item block
+          The staggered pop-up animation will reapply automatically to any new items.
+        -->
+        <div class="gallery-grid" id="gallery-grid">
+
+          <div class="gallery-item wide">
+            <img src="assets/gallery/eid-al-fitr.jpg" alt="Eid al-Fitr" loading="lazy" />
+            <div class="gallery-caption"><span class="caption">Eid al-Fitr</span></div>
+          </div>
+
+          <div class="gallery-item wide">
+            <img src="assets/gallery/golden-gate-fajr.jpg" alt="Golden Gate Fajr" loading="lazy" />
+            <div class="gallery-caption"><span class="caption">Golden Gate Fajr</span></div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/gallery/grad-archery.jpg" alt="Grad Archery" loading="lazy" />
+            <div class="gallery-caption"><span class="caption">Grad Archery</span></div>
+          </div>
+
+          <div class="gallery-item tall">
+            <img src="assets/gallery/welcome-banquet.jpg" alt="Welcome Banquet" loading="lazy" />
+            <div class="gallery-caption"><span class="caption">Welcome Banquet</span></div>
+          </div>
+
+          <div class="gallery-item landscape">
+            <img src="assets/gallery/msu-on-ice.jpg" alt="MSU on Ice" loading="lazy" />
+            <div class="gallery-caption"><span class="caption">MSU on Ice</span></div>
+          </div>
+
+          <div class="gallery-item landscape">
+            <img src="assets/gallery/open-iftar.jpg" alt="Open Iftar" loading="lazy" />
+            <div class="gallery-caption"><span class="caption">Open Iftar</span></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
