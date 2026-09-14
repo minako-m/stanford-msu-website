@@ -607,11 +607,17 @@ ul  { list-style: none; }
   line-height: 1.65;
 }
 .contact-item p a {
-  color: var(--maroon);
-  font-weight: 600;
-  transition: color .2s;
+  color: var(--text-muted);
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: rgba(107,82,82,.35);
+  text-underline-offset: 2px;
+  transition: color .2s, text-decoration-color .2s;
 }
-.contact-item p a:hover { color: var(--gold); text-decoration: underline; }
+.contact-item p a:hover {
+  color: var(--maroon);
+  text-decoration-color: var(--maroon);
+}
 
 .contact-map {
   border-radius: var(--radius);
@@ -847,7 +853,18 @@ ul  { list-style: none; }
   color: var(--text-muted);
   line-height: 1.6;
 }
-
+.prayer-card-body a {
+  color: var(--text-muted);
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: rgba(107,82,82,.35);
+  text-underline-offset: 2px;
+  transition: color .2s, text-decoration-color .2s;
+}
+.prayer-card-body a:hover {
+  color: var(--maroon);
+  text-decoration-color: var(--maroon);
+}
 /* ================================================================
    FOOD & ACCOMMODATIONS (campus-life.html)
    ================================================================ */
